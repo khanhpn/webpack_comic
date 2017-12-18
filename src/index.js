@@ -1,5 +1,5 @@
-// import sum from './math';
-const sum = require('./math');
+import sum from './math';
+import './image.js';
 
 const total = sum(8,9);
 console.log(total);

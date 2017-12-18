@@ -67,23 +67,56 @@
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-// import sum from './math';
-const sum = __webpack_require__(1);
+"use strict";
 
-const total = sum(8,9);
+
+var _math = __webpack_require__(1);
+
+var _math2 = _interopRequireDefault(_math);
+
+__webpack_require__(2);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var total = (0, _math2.default)(8, 9);
 console.log(total);
 document.write(total);
 
 /***/ }),
 /* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+var sum = function sum(a, b) {
+    return a + b;
+};
+
+exports.default = sum;
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+__webpack_require__(3);
+
+var image = document.createElement('img');
+image.src = 'http://52.69.26.47/custom_image/1/jpg/2017/12/08/Z_VM0_J_470010_20171208210000_1000001.jpg';
+
+document.body.appendChild(image);
+
+/***/ }),
+/* 3 */
 /***/ (function(module, exports) {
 
-const sum = (a, b) => {
-    return a + b;
-}
-
-// export default sum;
-module.exports = sum;
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);
